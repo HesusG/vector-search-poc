@@ -2,3 +2,7 @@ numpy
 transformers
 elasticsearch
 torch
+eland
+BeautifulSoup4
+dotenv
+tqdm
