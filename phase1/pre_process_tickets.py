@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from elasticsearch import Elasticsearch
 from datetime import datetime, timedelta
+from tqdm import tqdm
 
 # %%
 pd.set_option('display.max_columns', 50)
@@ -270,6 +271,259 @@ def row_to_dict(row):
     return row.to_dict()
 
 # Index each row in the DataFrame as a document in Elasticsearch
-for _, row in df.iterrows():
+for _, row in tqdm(df.iterrows(), total=df.shape[0], desc="Indexing documents"):
     doc = row_to_dict(row)
-    es.index(index=index_name, body=doc)
+    es.index(index="ticket_similarity", body=doc)
+
+# %%
+df.to_pickle("my_dataframe.pkl")
+# %%
+df = pd.read_pickle('my_dataframe.pkl')
+
+# %%
+numeric_columns = ['current_duration', 'message_total_count', 'team_id', 'stage_id', 'ticket_type_id', 'total_hours_spent']
+
+# %%
+from sklearn.preprocessing import StandardScaler
+scaler = StandardScaler()
+
+# Scale the numeric columns and replace them in the DataFrame
+df[numeric_columns] = scaler.fit_transform(df[numeric_columns])
+# %%
+from sklearn.feature_extraction import FeatureHasher
+
+import pandas as pd
+
+def apply_frequency_encoding(dataframe, column_name):
+    # Count the frequency of each category
+    frequency = dataframe[column_name].value_counts()
+    # Map each category to its corresponding frequency
+    dataframe[column_name + '_freq'] = dataframe[column_name].map(frequency)
+    return dataframe
+
+# List of categorical columns to encode
+categorical_cols = ['solution', 'product_id', 'description_plain', 'description',
+                    'cicore_id_name', 'is_alert', 'stage_id_name', 'handle_type', 'team_category', 'owner_id_name', 'combined_text']
+
+# Apply frequency encoding to each categorical column
+for col in categorical_cols:
+    df = apply_frequency_encoding(df, col)
+#%%
+numerical_cols = df.select_dtypes(include=['float64', 'int64']).columns.tolist()
+
+# Manually specify your dense vector columns
+vector_cols = ['description_plain_vector', 'solution_vector', 'combined_text_vector']
+
+# Combine lists
+selected_columns = numerical_cols + vector_cols
+
+# Select these columns from the DataFrame
+df_selected = df[selected_columns]
+# %%
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+import seaborn as sns
+# %%
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import Normalizer
+from sklearn.decomposition import PCA
+from sklearn.cluster import KMeans
+
+
+# %%
+import numpy as np
+import pandas as pd
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import Normalizer
+
+# Assuming df is your DataFrame and combined_text_vector is stored as lists
+# Convert the list of vectors into a NumPy array
+vectors = np.array(df['combined_text_vector'].tolist())
+
+# Optionally normalize the vectors
+normalizer = Normalizer()
+vectors_normalized = normalizer.fit_transform(vectors)
+# %%
+k_range = range(1, 11)
+inertias = []
+
+for k in k_range:
+    kmeans = KMeans(n_clusters=k, random_state=42)
+    kmeans.fit(vectors_normalized)
+    inertias.append(kmeans.inertia_)
+
+# Plotting the elbow curve
+plt.figure(figsize=(8, 4))
+plt.plot(k_range, inertias, 'bo-')
+plt.xlabel('Number of Clusters (k)')
+plt.ylabel('Inertia')
+plt.title('Elbow Method For Optimal k')
+plt.xticks(k_range)
+plt.grid(True)
+plt.show()
+
+# %%
+# Assuming k_optimal is chosen based on the elbow plot
+k_optimal = 5  # Example value; adjust based on your observation
+kmeans_final = KMeans(n_clusters=k_optimal, init='k-means++', random_state=42)
+df['cluster'] = kmeans_final.fit_predict(vectors_normalized)
+
+# Analyze the result
+print(df[['combined_text_vector', 'cluster']].head())
+
+
+
+# %%
+from sklearn.decomposition import PCA
+import matplotlib.pyplot as plt
+
+# Assume 'vectors_normalized' contains your normalized dense vectors
+# Reduce dimensions
+pca = PCA(n_components=2)
+reduced_vectors = pca.fit_transform(vectors_normalized)
+
+# Extract cluster labels
+cluster_labels = kmeans_final.labels_
+
+# Plotting
+plt.figure(figsize=(10, 6))
+plt.scatter(reduced_vectors[:, 0], reduced_vectors[:, 1], c=cluster_labels, cmap='viridis', marker='o', edgecolor='k', s=50, alpha=0.5)
+plt.colorbar()
+plt.title('PCA-based Clustering Visualization')
+plt.xlabel('Principal Component 1')
+plt.ylabel('Principal Component 2')
+plt.show()
+# %%
+from sklearn.manifold import TSNE
+
+# Reducing dimension to 2D using t-SNE
+tsne = TSNE(n_components=2, verbose=1, perplexity=40, n_iter=300)
+tsne_results = tsne.fit_transform(vectors_normalized)
+
+# Plotting
+plt.figure(figsize=(10, 6))
+plt.scatter(tsne_results[:, 0], tsne_results[:, 1], c=cluster_labels, cmap='viridis', marker='o', edgecolor='k', s=50, alpha=0.5)
+plt.colorbar()
+plt.title('t-SNE based Clustering Visualization')
+plt.xlabel('t-SNE Feature 1')
+plt.ylabel('t-SNE Feature 2')
+plt.show()
+# %%
+cluster_means = df.groupby('cluster').mean()
+print("Mean values per cluster for all numerical features:")
+print(cluster_means)
+
+# Calculate count, max, min, and other statistics as needed
+cluster_counts = df.groupby('cluster').count()  # Counts can indicate the size of each cluster
+print("\nCounts per cluster:")
+print(cluster_counts)
+
+# %%
+from sklearn.manifold import TSNE
+
+# Assuming 'data' is your high-dimensional data
+tsne = TSNE(n_components=2, random_state=42)
+tsne_results = tsne.fit_transform(vectors_normalized)
+
+from sklearn.cluster import KMeans
+
+# Use k-means or another clustering algorithm on the t-SNE output
+k = 5  # Number of clusters
+kmeans = KMeans(n_clusters=k, random_state=42)
+clusters = kmeans.fit_predict(tsne_results)
+
+# Now 'clusters' contains the cluster labels assigned to your data
+
+import matplotlib.pyplot as plt
+
+# Plotting the t-SNE results with cluster labels
+plt.figure(figsize=(10, 8))
+plt.scatter(tsne_results[:, 0], tsne_results[:, 1], c=clusters, cmap='viridis', alpha=0.5)
+plt.colorbar()
+plt.title('t-SNE visualization with cluster labels')
+plt.xlabel('t-SNE Feature 1')
+plt.ylabel('t-SNE Feature 2')
+plt.show()
+
+# %%
+df['cluster_labels'] = clusters
+# %%
+import pandas as pd
+
+# Assuming 'df' is your DataFrame
+# Initialize lists to store column names
+num_cols = []
+cat_cols = []
+selected_cols = []
+
+# Categorize columns based on data type and name
+for col in df.columns:
+    if "_freq" in col or "_vector" in col or col in ["cluster", "kmeans"]:
+        continue  # Skip columns based on exclusion criteria
+    elif df[col].dtype in ['int64', 'float64']:
+        num_cols.append(col)
+    else:
+        cat_cols.append(col)
+
+# Optionally, combine lists if needed
+selected_cols = num_cols + cat_cols
+
+# Output to check lists
+print("Numerical Columns:", num_cols)
+print("Categorical Columns:", cat_cols)
+print("Selected Columns:", selected_cols)
+
+# %%
+cat_cols = ['cicore_id_name', 'is_alert', 'stage_id_name', 'handle_type', 'team_category', 'owner_id_name']
+
+# %%
+for col in cat_cols:
+    plt.figure(figsize=(10, 6))
+    sns.countplot(x=col, hue='cluster', data=df)
+    plt.title(f'Distribution of {col} by Cluster')
+    plt.xticks(rotation=45)  # Rotate labels if they overlap
+    plt.legend(title='Cluster')
+    plt.show()
+# %%
+for col in num_cols:
+    plt.figure(figsize=(10, 6))
+    sns.boxplot(x='cluster', y=col, data=df)
+    plt.title(f'Distribution of {col} by Cluster')
+    plt.show()
+# %%
+for col in num_cols:
+    print(f"Descriptive Statistics for {col} by Cluster:")
+    display(df.groupby('cluster')[col].describe())
+# %%
+cluster_samples = {}
+selected_cols = [
+    'current_duration', 'message_total_count', 'team_id', 'stage_id', 'ticket_type_id', 
+    'total_hours_spent', 'solution', 'product_id', 'description_plain', 
+    'cicore_id_name', 'is_alert', 'stage_id_name', 'handle_type', 'team_category', 'owner_id_name'
+]
+
+# Get unique clusters
+clusters = df['cluster'].unique()
+# Sample 10 tickets from each cluster, but only include selected columns
+for cluster in clusters:
+    # Filter df for selected columns and then sample
+    cluster_samples[f'cluster_{cluster}'] = df.loc[df['cluster'] == cluster, selected_cols].sample(n=10, random_state=42)
+
+# %%
+cluster_samples['cluster_0'].to_clipboard(index=False)
+# %%
+clusters = df['cluster'].unique()
+
+# Initialize an empty DataFrame to store combined samples
+all_cluster_samples = pd.DataFrame()
+
+# Loop through each cluster and sample 10 tickets
+for cluster in clusters:
+    # Sample 10 tickets from each cluster
+    cluster_sample = df[df['cluster'] == cluster].sample(n=10, random_state=42)
+    all_cluster_samples = pd.concat([all_cluster_samples, cluster_sample], ignore_index=True)
+
+
+# %%

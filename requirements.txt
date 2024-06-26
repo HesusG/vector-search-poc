@@ -6,3 +6,4 @@ eland
 BeautifulSoup4
 dotenv
 tqdm
+ollama
