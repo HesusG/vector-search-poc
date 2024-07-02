@@ -89,3 +89,22 @@ fields_without_custom_label = [field for field, details in json_data['data_view'
 
 print("Fields without customLabel:", fields_without_custom_label)
 # %%
+import json
+
+# Load the JSON file
+file_path = "./info/response.json"
+with open(file_path, "r") as file:
+    data = json.load(file)
+
+# Function to check if the field matches the criteria
+def check_field(field):
+    if field.endswith(("id", "keyword", "name")):
+        words = field.split('.')
+        if len(words) >= 3 and (len(words[-2]) > 2 or len(words[-3]) > 2):
+            return True
+    return False
+
+# Find all matching fields
+matching_items = [key for key in data.keys() if check_field(key)]
+
+# %%

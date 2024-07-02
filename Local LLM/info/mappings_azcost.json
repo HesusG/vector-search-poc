@@ -1,0 +1,1374 @@
+{
+  "azure.costmanager": {
+    "mappings": {
+      "tags.SAP Jump Server": {
+        "full_name": "tags.SAP Jump Server"
+      },
+      "tags.WAP_OS_BUILD": {
+        "full_name": "tags.WAP_OS_BUILD"
+      },
+      "tags.tags.Owner ": {
+        "full_name": "tags.tags.Owner "
+      },
+      "tags.aks-managed-operationID": {
+        "full_name": "tags.aks-managed-operationID"
+      },
+      "tags.Creation Date": {
+        "full_name": "tags.Creation Date"
+      },
+      "tags.Veeam backup appliance ID": {
+        "full_name": "tags.Veeam backup appliance ID"
+      },
+      "tags.Loftware Database": {
+        "full_name": "tags.Loftware Database"
+      },
+      "tags.tags.NMW_VM_FQDN": {
+        "full_name": "tags.tags.NMW_VM_FQDN"
+      },
+      "tags.tags.Location.keyword": {
+        "full_name": "tags.tags.Location.keyword"
+      },
+      "tags.tags.Customer Name": {
+        "full_name": "tags.tags.Customer Name"
+      },
+      "tags.tags.Dragonfly.keyword": {
+        "full_name": "tags.tags.Dragonfly.keyword"
+      },
+      "tags.tags.Creation date.keyword": {
+        "full_name": "tags.tags.Creation date.keyword"
+      },
+      "tags.tags.NMW_VM_DESCRIPTION.keyword": {
+        "full_name": "tags.tags.NMW_VM_DESCRIPTION.keyword"
+      },
+      "tags.tags.managed-by-k8s-ingress": {
+        "full_name": "tags.tags.managed-by-k8s-ingress"
+      },
+      "tags.k8s-azure-created-by": {
+        "full_name": "tags.k8s-azure-created-by"
+      },
+      "tags.UsedByBackupReports": {
+        "full_name": "tags.UsedByBackupReports"
+      },
+      "tags.WAP_IMAGE_UPDATED_DATE": {
+        "full_name": "tags.WAP_IMAGE_UPDATED_DATE"
+      },
+      "tags.tags.Environment": {
+        "full_name": "tags.tags.Environment"
+      },
+      "tags.tags.Shutdown.keyword": {
+        "full_name": "tags.tags.Shutdown.keyword"
+      },
+      "tags.logicalName": {
+        "full_name": "tags.logicalName"
+      },
+      "tags.hidden-link: /app-insights-conn-string": {
+        "full_name": "tags.hidden-link: /app-insights-conn-string"
+      },
+      "tags.DisasterRecovery": {
+        "full_name": "tags.DisasterRecovery"
+      },
+      "tags.tags.Ticket #.keyword": {
+        "full_name": "tags.tags.Ticket #.keyword"
+      },
+      "tags.tags.location.keyword": {
+        "full_name": "tags.tags.location.keyword"
+      },
+      "tags.tags.k8s-azure-service": {
+        "full_name": "tags.tags.k8s-azure-service"
+      },
+      "tags.Type": {
+        "full_name": "tags.Type"
+      },
+      "tags.CustomerName": {
+        "full_name": "tags.CustomerName"
+      },
+      "tags.Veeam": {
+        "full_name": "tags.Veeam"
+      },
+      "tags.Actifio Backup Vault": {
+        "full_name": "tags.Actifio Backup Vault"
+      },
+      "tags.tags.CreatedBy.keyword": {
+        "full_name": "tags.tags.CreatedBy.keyword"
+      },
+      "tags.NMW_SCALE_IN_RESTRICTION": {
+        "full_name": "tags.NMW_SCALE_IN_RESTRICTION"
+      },
+      "tags.hidden-sentinelContentType": {
+        "full_name": "tags.hidden-sentinelContentType"
+      },
+      "tags.tags.shutdown.keyword": {
+        "full_name": "tags.tags.shutdown.keyword"
+      },
+      "tags.tags.CustomerName.keyword": {
+        "full_name": "tags.tags.CustomerName.keyword"
+      },
+      "tags.CitrixProvisioningSchemeId": {
+        "full_name": "tags.CitrixProvisioningSchemeId"
+      },
+      "tags.tags.aks-managed-consolidated-additional-properties.keyword": {
+        "full_name": "tags.tags.aks-managed-consolidated-additional-properties.keyword"
+      },
+      "migration": {
+        "full_name": "migration"
+      },
+      "tags.CreationDate": {
+        "full_name": "tags.CreationDate"
+      },
+      "tags.Migrate Project": {
+        "full_name": "tags.Migrate Project"
+      },
+      "tags.City": {
+        "full_name": "tags.City"
+      },
+      "tags.Patching": {
+        "full_name": "tags.Patching"
+      },
+      "_nested_path": {
+        "full_name": "_nested_path"
+      },
+      "tags.tags.description": {
+        "full_name": "tags.tags.description"
+      },
+      "tags_resources.tags.Application": {
+        "full_name": "tags_resources.tags.Application"
+      },
+      "resourceName": {
+        "full_name": "resourceName"
+      },
+      "tags.NMW_MARKETPLACE_IMAGE_ID": {
+        "full_name": "tags.NMW_MARKETPLACE_IMAGE_ID"
+      },
+      "tags.ITOM Probe Server": {
+        "full_name": "tags.ITOM Probe Server"
+      },
+      "tags.tags.backup": {
+        "full_name": "tags.tags.backup"
+      },
+      "_seq_no": {
+        "full_name": "_seq_no"
+      },
+      "tags.veeam05": {
+        "full_name": "tags.veeam05"
+      },
+      "tags.veeam04": {
+        "full_name": "tags.veeam04"
+      },
+      "tags.veeam03": {
+        "full_name": "tags.veeam03"
+      },
+      "tags.veeam02": {
+        "full_name": "tags.veeam02"
+      },
+      "tags.veeam01": {
+        "full_name": "tags.veeam01"
+      },
+      "tags.tags.Usage.keyword": {
+        "full_name": "tags.tags.Usage.keyword"
+      },
+      "tags.tags.ms-resource-usage": {
+        "full_name": "tags.tags.ms-resource-usage"
+      },
+      "tags.tags.patching": {
+        "full_name": "tags.tags.patching"
+      },
+      "CustomerName": {
+        "full_name": "CustomerName"
+      },
+      "tags.Application Rental Web Service": {
+        "full_name": "tags.Application Rental Web Service"
+      },
+      "tags.tags.CreatedDate.keyword": {
+        "full_name": "tags.tags.CreatedDate.keyword"
+      },
+      "tags.RSVaultBackup": {
+        "full_name": "tags.RSVaultBackup"
+      },
+      "tags.tags.displayName": {
+        "full_name": "tags.tags.displayName"
+      },
+      "tags.tags.customerName": {
+        "full_name": "tags.tags.customerName"
+      },
+      "tags.Unallocated": {
+        "full_name": "tags.Unallocated"
+      },
+      "tags.NMW_ARM_HOST_POOL": {
+        "full_name": "tags.NMW_ARM_HOST_POOL"
+      },
+      "tags.tags._GXMD_.keyword": {
+        "full_name": "tags.tags._GXMD_.keyword"
+      },
+      "tags.tags.aks-managed-operationID": {
+        "full_name": "tags.tags.aks-managed-operationID"
+      },
+      "tags.WAP_VM_FQDN": {
+        "full_name": "tags.WAP_VM_FQDN"
+      },
+      "tags.creation date": {
+        "full_name": "tags.creation date"
+      },
+      "MeterCategory": {
+        "full_name": "MeterCategory"
+      },
+      "tags.tags.aks-managed-creationSource.keyword": {
+        "full_name": "tags.tags.aks-managed-creationSource.keyword"
+      },
+      "_routing": {
+        "full_name": "_routing"
+      },
+      "tags.NMW_ASSOCIATED_VM_NAME": {
+        "full_name": "tags.NMW_ASSOCIATED_VM_NAME"
+      },
+      "tags.tags.NMW_SOURCE_IMAGE_GUID.keyword": {
+        "full_name": "tags.tags.NMW_SOURCE_IMAGE_GUID.keyword"
+      },
+      "tags.OrganizationName": {
+        "full_name": "tags.OrganizationName"
+      },
+      "tags.aks-managed-poolName": {
+        "full_name": "tags.aks-managed-poolName"
+      },
+      "tags.tags.NMW_IMAGE_UPDATED_DATE": {
+        "full_name": "tags.tags.NMW_IMAGE_UPDATED_DATE"
+      },
+      "tags.Client Code": {
+        "full_name": "tags.Client Code"
+      },
+      "tags.SAP Router": {
+        "full_name": "tags.SAP Router"
+      },
+      "tags.SAP S4 HANA": {
+        "full_name": "tags.SAP S4 HANA"
+      },
+      "tags.tags.aks-managed-resourceNameSuffix.keyword": {
+        "full_name": "tags.tags.aks-managed-resourceNameSuffix.keyword"
+      },
+      "tags.Created by": {
+        "full_name": "tags.Created by"
+      },
+      "tags.tags.Application": {
+        "full_name": "tags.tags.Application"
+      },
+      "tags.MachineName": {
+        "full_name": "tags.MachineName"
+      },
+      "tags.tags.CV-SubclientId": {
+        "full_name": "tags.tags.CV-SubclientId"
+      },
+      "tags.hidden-link:/subscriptions/3ff61ecb-d1f5-4c71-97fe-3707f7ec19ee/resourceGroups/Default-Web-NorthCentralUS/providers/microsoft.web/sites/invacareconnects": {
+        "full_name": "tags.hidden-link:/subscriptions/3ff61ecb-d1f5-4c71-97fe-3707f7ec19ee/resourceGroups/Default-Web-NorthCentralUS/providers/microsoft.web/sites/invacareconnects"
+      },
+      "tags.tags.Created by.keyword": {
+        "full_name": "tags.tags.Created by.keyword"
+      },
+      "tags.tags.NMW_VM_DOMAIN": {
+        "full_name": "tags.tags.NMW_VM_DOMAIN"
+      },
+      "tags.Service-Name": {
+        "full_name": "tags.Service-Name"
+      },
+      "tags.OriginalClassicStackName": {
+        "full_name": "tags.OriginalClassicStackName"
+      },
+      "tags.tags.Created date": {
+        "full_name": "tags.tags.Created date"
+      },
+      "tags.tags.RequestedBy": {
+        "full_name": "tags.tags.RequestedBy"
+      },
+      "tags.k8s-azure-owner-service": {
+        "full_name": "tags.k8s-azure-owner-service"
+      },
+      "tags.tags.NMW_IMAGE_GUID.keyword": {
+        "full_name": "tags.tags.NMW_IMAGE_GUID.keyword"
+      },
+      "tags.tags.Type": {
+        "full_name": "tags.tags.Type"
+      },
+      "tags.tags.Shutdown": {
+        "full_name": "tags.tags.Shutdown"
+      },
+      "tags.tags._COMMVAULT_GXMD_SNAP_": {
+        "full_name": "tags.tags._COMMVAULT_GXMD_SNAP_"
+      },
+      "tags.WAP_OBJECT_VERSION": {
+        "full_name": "tags.WAP_OBJECT_VERSION"
+      },
+      "tags.created-by": {
+        "full_name": "tags.created-by"
+      },
+      "tags.SAP Cloud Connector": {
+        "full_name": "tags.SAP Cloud Connector"
+      },
+      "tags.WAP_OBJECT_TYPE": {
+        "full_name": "tags.WAP_OBJECT_TYPE"
+      },
+      "tags.tags.City": {
+        "full_name": "tags.tags.City"
+      },
+      "tags.Created Date": {
+        "full_name": "tags.Created Date"
+      },
+      "tags.tags.hidden-link:/subscriptions/88b48825-6380-4cd8-a812-29e6f5425d01/resourceGroups/eit-devops-es1-rg/providers/Microsoft.Web/sites/exaodoofunctions": {
+        "full_name": "tags.tags.hidden-link:/subscriptions/88b48825-6380-4cd8-a812-29e6f5425d01/resourceGroups/eit-devops-es1-rg/providers/Microsoft.Web/sites/exaodoofunctions"
+      },
+      "tags.sharepont": {
+        "full_name": "tags.sharepont"
+      },
+      "tags.tags.NMW_JOB_GUID.keyword": {
+        "full_name": "tags.tags.NMW_JOB_GUID.keyword"
+      },
+      "tags.ServiceBusNamespace": {
+        "full_name": "tags.ServiceBusNamespace"
+      },
+      "tags.NMW_IMAGE_GUID": {
+        "full_name": "tags.NMW_IMAGE_GUID"
+      },
+      "tags.CitrixVirtualSiteId": {
+        "full_name": "tags.CitrixVirtualSiteId"
+      },
+      "tags.tags.ASR-ReplicaDisk.keyword": {
+        "full_name": "tags.tags.ASR-ReplicaDisk.keyword"
+      },
+      "tags.tags.Owner": {
+        "full_name": "tags.tags.Owner"
+      },
+      "tags.QA app ecomm - Commerce Server 10": {
+        "full_name": "tags.QA app ecomm - Commerce Server 10"
+      },
+      "tags.NMW_VM_FQDN": {
+        "full_name": "tags.NMW_VM_FQDN"
+      },
+      "tags.WAP_IMAGE_GUID": {
+        "full_name": "tags.WAP_IMAGE_GUID"
+      },
+      "tags.hidden-link: /app-insights-instrumentation-key": {
+        "full_name": "tags.hidden-link: /app-insights-instrumentation-key"
+      },
+      "tags.Created By": {
+        "full_name": "tags.Created By"
+      },
+      "tags.HANA": {
+        "full_name": "tags.HANA"
+      },
+      "tags.tags.backup.keyword": {
+        "full_name": "tags.tags.backup.keyword"
+      },
+      "tags.tags.aks-managed-createOperationID.keyword": {
+        "full_name": "tags.tags.aks-managed-createOperationID.keyword"
+      },
+      "tags.Environment": {
+        "full_name": "tags.Environment"
+      },
+      "tags.idLower.keyword": {
+        "full_name": "tags.idLower.keyword"
+      },
+      "tags.Enviroment": {
+        "full_name": "tags.Enviroment"
+      },
+      "tags.createdBy": {
+        "full_name": "tags.createdBy"
+      },
+      "tags.hidden-related:diagnostics/changeAnalysisScanEnabled": {
+        "full_name": "tags.hidden-related:diagnostics/changeAnalysisScanEnabled"
+      },
+      "_feature": {
+        "full_name": "_feature"
+      },
+      "tags.tags.Request.keyword": {
+        "full_name": "tags.tags.Request.keyword"
+      },
+      "tags.tags.NMW_OS_BUILD": {
+        "full_name": "tags.tags.NMW_OS_BUILD"
+      },
+      "tags.Supplier Portal - SP2013 - Prod - Database": {
+        "full_name": "tags.Supplier Portal - SP2013 - Prod - Database"
+      },
+      "tags.WAP_SOURCE_IMAGE_GUID": {
+        "full_name": "tags.WAP_SOURCE_IMAGE_GUID"
+      },
+      "tags.tags.managed-by-k8s-ingress.keyword": {
+        "full_name": "tags.tags.managed-by-k8s-ingress.keyword"
+      },
+      "tags.patching ": {
+        "full_name": "tags.patching "
+      },
+      "tags.hidden-related:/providers/Microsoft.Web/sites/IntacctDeptRestrictFXProd": {
+        "full_name": "tags.hidden-related:/providers/Microsoft.Web/sites/IntacctDeptRestrictFXProd"
+      },
+      "tags.CAPEX DEVIATION - Keywords.insideinvacare.com Web Service - ADP2ADSYNC": {
+        "full_name": "tags.CAPEX DEVIATION - Keywords.insideinvacare.com Web Service - ADP2ADSYNC"
+      },
+      "tags.description": {
+        "full_name": "tags.description"
+      },
+      "tags.NMW_SOURCE_IMAGE_GUID": {
+        "full_name": "tags.NMW_SOURCE_IMAGE_GUID"
+      },
+      "tags.hidden-link:/subscriptions/94705e36-6421-4b90-90cb-b4eeefcdf7f9/resourceGroups/RES-UG2AZU-STANFORD/providers/microsoft.insights/components/UG2StanfordFx": {
+        "full_name": "tags.hidden-link:/subscriptions/94705e36-6421-4b90-90cb-b4eeefcdf7f9/resourceGroups/RES-UG2AZU-STANFORD/providers/microsoft.insights/components/UG2StanfordFx"
+      },
+      "tags.tags.aks-managed-kubeletIdentityClientID": {
+        "full_name": "tags.tags.aks-managed-kubeletIdentityClientID"
+      },
+      "ChargeType": {
+        "full_name": "ChargeType"
+      },
+      "tags.tags.k8s-azure-created-by.keyword": {
+        "full_name": "tags.tags.k8s-azure-created-by.keyword"
+      },
+      "tags.Customer Name": {
+        "full_name": "tags.Customer Name"
+      },
+      "tags.tags.CreationDate.keyword": {
+        "full_name": "tags.tags.CreationDate.keyword"
+      },
+      "tags.Vidyashree,Chinmay Arora": {
+        "full_name": "tags.Vidyashree,Chinmay Arora"
+      },
+      "tags.NMW_OBJECT_TYPE": {
+        "full_name": "tags.NMW_OBJECT_TYPE"
+      },
+      "tags.ticket": {
+        "full_name": "tags.ticket"
+      },
+      "tags.tags.createdBy": {
+        "full_name": "tags.tags.createdBy"
+      },
+      "tags.Proximity Placement Group": {
+        "full_name": "tags.Proximity Placement Group"
+      },
+      "tags.tags.Owner.keyword": {
+        "full_name": "tags.tags.Owner.keyword"
+      },
+      "tags.tags.aks-managed-cluster-rg": {
+        "full_name": "tags.tags.aks-managed-cluster-rg"
+      },
+      "tags.displayName": {
+        "full_name": "tags.displayName"
+      },
+      "tags.tags.Description.keyword": {
+        "full_name": "tags.tags.Description.keyword"
+      },
+      "tags.tags.Type.keyword": {
+        "full_name": "tags.tags.Type.keyword"
+      },
+      "tags.Created": {
+        "full_name": "tags.Created"
+      },
+      "tags.Application CAPEX DEVIATION Keywords.insideinvacare.com (Web Service)": {
+        "full_name": "tags.Application CAPEX DEVIATION Keywords.insideinvacare.com (Web Service)"
+      },
+      "Product": {
+        "full_name": "Product"
+      },
+      "tags.SAP": {
+        "full_name": "tags.SAP"
+      },
+      "tags.tags.CreationDate": {
+        "full_name": "tags.tags.CreationDate"
+      },
+      "tags.aks-managed-kubeletIdentityClientID": {
+        "full_name": "tags.aks-managed-kubeletIdentityClientID"
+      },
+      "tags.k8s-azure-service": {
+        "full_name": "tags.k8s-azure-service"
+      },
+      "tags.tags.kubernetes.io-created-for-pvc-name": {
+        "full_name": "tags.tags.kubernetes.io-created-for-pvc-name"
+      },
+      "tags.tags.NMW_IMAGE_VERSION": {
+        "full_name": "tags.tags.NMW_IMAGE_VERSION"
+      },
+      "tags.managed-by-k8s-ingress": {
+        "full_name": "tags.managed-by-k8s-ingress"
+      },
+      "tags.NMW_PENDING_ACTION": {
+        "full_name": "tags.NMW_PENDING_ACTION"
+      },
+      "tags.tags.CustomerName": {
+        "full_name": "tags.tags.CustomerName"
+      },
+      "tags.asrseeddisk-7a9ab482-ec6d-543d-8ece-a7d8fb90c6f7": {
+        "full_name": "tags.asrseeddisk-7a9ab482-ec6d-543d-8ece-a7d8fb90c6f7"
+      },
+      "tags.SharePoint 2013 Prod Application Server": {
+        "full_name": "tags.SharePoint 2013 Prod Application Server"
+      },
+      "tags.tags.hidden-link: /app-insights-instrumentation-key": {
+        "full_name": "tags.tags.hidden-link: /app-insights-instrumentation-key"
+      },
+      "tags.tags.environment": {
+        "full_name": "tags.tags.environment"
+      },
+      "tags.aks-managed-createOperationID": {
+        "full_name": "tags.aks-managed-createOperationID"
+      },
+      "tags.tags.Environment.keyword": {
+        "full_name": "tags.tags.Environment.keyword"
+      },
+      "tags.Application": {
+        "full_name": "tags.Application"
+      },
+      "tags.CitrixResource": {
+        "full_name": "tags.CitrixResource"
+      },
+      "tags.location": {
+        "full_name": "tags.location"
+      },
+      "tags.tags.NMW_IMAGE_VERSION.keyword": {
+        "full_name": "tags.tags.NMW_IMAGE_VERSION.keyword"
+      },
+      "tags.tags.NMW_OS_DESCRIPTION": {
+        "full_name": "tags.tags.NMW_OS_DESCRIPTION"
+      },
+      "tags.WebDispatcher": {
+        "full_name": "tags.WebDispatcher"
+      },
+      "tags.tags.DisasterRecovery": {
+        "full_name": "tags.tags.DisasterRecovery"
+      },
+      "tags.allocation": {
+        "full_name": "tags.allocation"
+      },
+      "tags.ms-resource-usage": {
+        "full_name": "tags.ms-resource-usage"
+      },
+      "tags.RequestedBy": {
+        "full_name": "tags.RequestedBy"
+      },
+      "tags.iDocs": {
+        "full_name": "tags.iDocs"
+      },
+      "ResourceId": {
+        "full_name": "ResourceId"
+      },
+      "CostUSD": {
+        "full_name": "CostUSD"
+      },
+      "tags.tags.Owner .keyword": {
+        "full_name": "tags.tags.Owner .keyword"
+      },
+      "tags.hidden-link: /app-insights-resource-id": {
+        "full_name": "tags.hidden-link: /app-insights-resource-id"
+      },
+      "tags.NMW_OBJECT_VERSION": {
+        "full_name": "tags.NMW_OBJECT_VERSION"
+      },
+      "tags.tags.k8s-azure-created-by": {
+        "full_name": "tags.tags.k8s-azure-created-by"
+      },
+      "tags.Sharepoint Prod": {
+        "full_name": "tags.Sharepoint Prod"
+      },
+      "tags.AppVersion": {
+        "full_name": "tags.AppVersion"
+      },
+      "tags.tags.hidden-link: /app-insights-conn-string": {
+        "full_name": "tags.tags.hidden-link: /app-insights-conn-string"
+      },
+      "tags.ASR-FODisk": {
+        "full_name": "tags.ASR-FODisk"
+      },
+      "tags.Database CapEx HME_SalesTeam IVCKeyWords": {
+        "full_name": "tags.Database CapEx HME_SalesTeam IVCKeyWords"
+      },
+      "tags.ticket#": {
+        "full_name": "tags.ticket#"
+      },
+      "tags.DR": {
+        "full_name": "tags.DR"
+      },
+      "tags.tags.Created date.keyword": {
+        "full_name": "tags.tags.Created date.keyword"
+      },
+      "tags.NMW_CREATED_DATE": {
+        "full_name": "tags.NMW_CREATED_DATE"
+      },
+      "tags.NMW_VM_DOMAIN": {
+        "full_name": "tags.NMW_VM_DOMAIN"
+      },
+      "tags.tags.Creation date": {
+        "full_name": "tags.tags.Creation date"
+      },
+      "tags.Steve Pataki": {
+        "full_name": "tags.Steve Pataki"
+      },
+      "tags.hidden-SentinelTemplateVersion": {
+        "full_name": "tags.hidden-SentinelTemplateVersion"
+      },
+      "tags.PROXIMITY GROUP": {
+        "full_name": "tags.PROXIMITY GROUP"
+      },
+      "tags.monitoring-insight": {
+        "full_name": "tags.monitoring-insight"
+      },
+      "tags.usedFor": {
+        "full_name": "tags.usedFor"
+      },
+      "tags.NFS": {
+        "full_name": "tags.NFS"
+      },
+      "tags.tags.aks-managed-cluster-rg.keyword": {
+        "full_name": "tags.tags.aks-managed-cluster-rg.keyword"
+      },
+      "tags.tags.kubernetes.io-created-for-pvc-namespace": {
+        "full_name": "tags.tags.kubernetes.io-created-for-pvc-namespace"
+      },
+      "tags.NMW_IMAGE_UPDATED_DATE": {
+        "full_name": "tags.NMW_IMAGE_UPDATED_DATE"
+      },
+      "tags.tags.Application.keyword": {
+        "full_name": "tags.tags.Application.keyword"
+      },
+      "tags_resources.class": {
+        "full_name": "tags_resources.class"
+      },
+      "tags.Enviornment": {
+        "full_name": "tags.Enviornment"
+      },
+      "tags.tags.patching.keyword": {
+        "full_name": "tags.tags.patching.keyword"
+      },
+      "tags.hidden-link:/subscriptions/88b48825-6380-4cd8-a812-29e6f5425d01/resourceGroups/eit-devops-es1-rg/providers/Microsoft.Web/sites/eitodooapibackendtest": {
+        "full_name": "tags.hidden-link:/subscriptions/88b48825-6380-4cd8-a812-29e6f5425d01/resourceGroups/eit-devops-es1-rg/providers/Microsoft.Web/sites/eitodooapibackendtest"
+      },
+      "tags.Automation ": {
+        "full_name": "tags.Automation "
+      },
+      "tags.tags.NMW_OS_DESCRIPTION.keyword": {
+        "full_name": "tags.tags.NMW_OS_DESCRIPTION.keyword"
+      },
+      "tags.tags.Create date": {
+        "full_name": "tags.tags.Create date"
+      },
+      "tags.WAP_OS_DESCRIPTION": {
+        "full_name": "tags.WAP_OS_DESCRIPTION"
+      },
+      "tags.tags.k8s-azure-cluster-name.keyword": {
+        "full_name": "tags.tags.k8s-azure-cluster-name.keyword"
+      },
+      "tags.tags.aks-managed-kubeletIdentityClientID.keyword": {
+        "full_name": "tags.tags.aks-managed-kubeletIdentityClientID.keyword"
+      },
+      "tags.hidden-title": {
+        "full_name": "tags.hidden-title"
+      },
+      "_source": {
+        "full_name": "_source"
+      },
+      "tags.tags.Created Date": {
+        "full_name": "tags.tags.Created Date"
+      },
+      "tags.Ticket #": {
+        "full_name": "tags.Ticket #"
+      },
+      "tags.Availability Set": {
+        "full_name": "tags.Availability Set"
+      },
+      "UsageDate": {
+        "full_name": "UsageDate"
+      },
+      "tags.tags.NMW_OBJECT_TYPE.keyword": {
+        "full_name": "tags.tags.NMW_OBJECT_TYPE.keyword"
+      },
+      "tags.cm-resource-parent": {
+        "full_name": "tags.cm-resource-parent"
+      },
+      "tags.Actifio SKY Apliance": {
+        "full_name": "tags.Actifio SKY Apliance"
+      },
+      "tags.tags.aks-managed-orchestrator.keyword": {
+        "full_name": "tags.tags.aks-managed-orchestrator.keyword"
+      },
+      "tags.tags.NMW_OBJECT_TYPE": {
+        "full_name": "tags.tags.NMW_OBJECT_TYPE"
+      },
+      "tags. Description": {
+        "full_name": "tags. Description"
+      },
+      "tags.hidden-related:/subscriptions/a14cd453-ed99-4f9c-b6cd-8e44e8e330d6/resourcegroups/Dynamic_CRM/providers/Microsoft.Web/serverfarms/DocuSignDev": {
+        "full_name": "tags.hidden-related:/subscriptions/a14cd453-ed99-4f9c-b6cd-8e44e8e330d6/resourcegroups/Dynamic_CRM/providers/Microsoft.Web/serverfarms/DocuSignDev"
+      },
+      "Currency": {
+        "full_name": "Currency"
+      },
+      "tags.tags.application": {
+        "full_name": "tags.tags.application"
+      },
+      "tags.tags.Created by": {
+        "full_name": "tags.tags.Created by"
+      },
+      "tags.FW TS VM": {
+        "full_name": "tags.FW TS VM"
+      },
+      "tags.Managed by": {
+        "full_name": "tags.Managed by"
+      },
+      "tags.tags.aks-managed-resourceNameSuffix": {
+        "full_name": "tags.tags.aks-managed-resourceNameSuffix"
+      },
+      "tags.tags. Description.keyword": {
+        "full_name": "tags.tags. Description.keyword"
+      },
+      "tags.project-id": {
+        "full_name": "tags.project-id"
+      },
+      "tags.tags.NMW_VM_DOMAIN.keyword": {
+        "full_name": "tags.tags.NMW_VM_DOMAIN.keyword"
+      },
+      "tags.Source": {
+        "full_name": "tags.Source"
+      },
+      "tags.VNET": {
+        "full_name": "tags.VNET"
+      },
+      "tags.tags.aks-managed-poolName": {
+        "full_name": "tags.tags.aks-managed-poolName"
+      },
+      "tags.LogicAppsCategory": {
+        "full_name": "tags.LogicAppsCategory"
+      },
+      "tags.WAP_ARM_HOST_POOL": {
+        "full_name": "tags.WAP_ARM_HOST_POOL"
+      },
+      "tags._COMMVAULT_GXMD_SNAP_": {
+        "full_name": "tags._COMMVAULT_GXMD_SNAP_"
+      },
+      "tags.tags.description.keyword": {
+        "full_name": "tags.tags.description.keyword"
+      },
+      "tags.WAP_JOB_GUID": {
+        "full_name": "tags.WAP_JOB_GUID"
+      },
+      "tags.AD": {
+        "full_name": "tags.AD"
+      },
+      "tags.NMW_JOB_GUID": {
+        "full_name": "tags.NMW_JOB_GUID"
+      },
+      "tags.tags.city.keyword": {
+        "full_name": "tags.tags.city.keyword"
+      },
+      "tags.hidden-link:/subscriptions/3ff61ecb-d1f5-4c71-97fe-3707f7ec19ee/resourceGroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/webtests/migrated-test1-migrated-hs-clmsp8k008": {
+        "full_name": "tags.hidden-link:/subscriptions/3ff61ecb-d1f5-4c71-97fe-3707f7ec19ee/resourceGroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/webtests/migrated-test1-migrated-hs-clmsp8k008"
+      },
+      "tags.tags.k8s-azure-cluster-name": {
+        "full_name": "tags.tags.k8s-azure-cluster-name"
+      },
+      "tags.hidden-link:/subscriptions/3ff61ecb-d1f5-4c71-97fe-3707f7ec19ee/resourceGroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/webtests/migrated-test1-migrated-hs-clmsp8k004": {
+        "full_name": "tags.hidden-link:/subscriptions/3ff61ecb-d1f5-4c71-97fe-3707f7ec19ee/resourceGroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/webtests/migrated-test1-migrated-hs-clmsp8k004"
+      },
+      "tags.tags.Request": {
+        "full_name": "tags.tags.Request"
+      },
+      "tags.tags.environment.keyword": {
+        "full_name": "tags.tags.environment.keyword"
+      },
+      "tags.tags.aks-managed-creationSource": {
+        "full_name": "tags.tags.aks-managed-creationSource"
+      },
+      "tags.WorkerToVbQueue": {
+        "full_name": "tags.WorkerToVbQueue"
+      },
+      "tags.hidden-related:/subscriptions/94705e36-6421-4b90-90cb-b4eeefcdf7f9/resourceGroups/RES-UG2AZU-JTS/providers/Microsoft.Web/serverfarms/JTSWebAppServicePlan": {
+        "full_name": "tags.hidden-related:/subscriptions/94705e36-6421-4b90-90cb-b4eeefcdf7f9/resourceGroups/RES-UG2AZU-JTS/providers/Microsoft.Web/serverfarms/JTSWebAppServicePlan"
+      },
+      "tags.tags.NMW_VM_FQDN.keyword": {
+        "full_name": "tags.tags.NMW_VM_FQDN.keyword"
+      },
+      "tags.O": {
+        "full_name": "tags.O"
+      },
+      "tags.tags.Customer.keyword": {
+        "full_name": "tags.tags.Customer.keyword"
+      },
+      "tags.tags.ms-resource-usage.keyword": {
+        "full_name": "tags.tags.ms-resource-usage.keyword"
+      },
+      "tags.Customer": {
+        "full_name": "tags.Customer"
+      },
+      "tags.CitrixCustomerId": {
+        "full_name": "tags.CitrixCustomerId"
+      },
+      "tags.environment": {
+        "full_name": "tags.environment"
+      },
+      "tags.EmergencyPatch": {
+        "full_name": "tags.EmergencyPatch"
+      },
+      "tags.Request": {
+        "full_name": "tags.Request"
+      },
+      "tags.This can be deleted": {
+        "full_name": "tags.This can be deleted"
+      },
+      "tags.Supplier Portal - SP2013 - Prod - WFE App": {
+        "full_name": "tags.Supplier Portal - SP2013 - Prod - WFE App"
+      },
+      "tags.aks-managed-resourceNameSuffix": {
+        "full_name": "tags.aks-managed-resourceNameSuffix"
+      },
+      "_index": {
+        "full_name": "_index"
+      },
+      "tags.applicationType": {
+        "full_name": "tags.applicationType"
+      },
+      "tags.VB for Azure": {
+        "full_name": "tags.VB for Azure"
+      },
+      "tags.kubernetes.io-created-for-pv-name": {
+        "full_name": "tags.kubernetes.io-created-for-pv-name"
+      },
+      "tags.VbToWorkerQueue": {
+        "full_name": "tags.VbToWorkerQueue"
+      },
+      "tags.provider": {
+        "full_name": "tags.provider"
+      },
+      "tags.ms-asr-snapshot-id": {
+        "full_name": "tags.ms-asr-snapshot-id"
+      },
+      "tags.tags.aks-managed-createOperationID": {
+        "full_name": "tags.tags.aks-managed-createOperationID"
+      },
+      "tags.WAP_CREATED_DATE": {
+        "full_name": "tags.WAP_CREATED_DATE"
+      },
+      "ServiceName": {
+        "full_name": "ServiceName"
+      },
+      "tags.tags.aks-managed-cluster-name": {
+        "full_name": "tags.tags.aks-managed-cluster-name"
+      },
+      "tags.tags.application.keyword": {
+        "full_name": "tags.tags.application.keyword"
+      },
+      "tags.tags.NMW_VM_DESCRIPTION": {
+        "full_name": "tags.tags.NMW_VM_DESCRIPTION"
+      },
+      "tags.tags.NMW_OS_BUILD.keyword": {
+        "full_name": "tags.tags.NMW_OS_BUILD.keyword"
+      },
+      "tags.owner": {
+        "full_name": "tags.owner"
+      },
+      "tags.aks-managed-consolidated-additional-properties": {
+        "full_name": "tags.aks-managed-consolidated-additional-properties"
+      },
+      "tags.shutdown": {
+        "full_name": "tags.shutdown"
+      },
+      "tags.NMW_IMAGE_VERSION": {
+        "full_name": "tags.NMW_IMAGE_VERSION"
+      },
+      "tags.kubernetes.io-created-for-pvc-name": {
+        "full_name": "tags.kubernetes.io-created-for-pvc-name"
+      },
+      "SubscriptionName": {
+        "full_name": "SubscriptionName"
+      },
+      "tags.aks-managed-cluster-rg": {
+        "full_name": "tags.aks-managed-cluster-rg"
+      },
+      "tags.NMW_ASSOCIATED_IMAGE_ID": {
+        "full_name": "tags.NMW_ASSOCIATED_IMAGE_ID"
+      },
+      "tags.Location": {
+        "full_name": "tags.Location"
+      },
+      "tags_resources.tags.Description": {
+        "full_name": "tags_resources.tags.Description"
+      },
+      "tags.Ticket#": {
+        "full_name": "tags.Ticket#"
+      },
+      "tags.tags.Created Date.keyword": {
+        "full_name": "tags.tags.Created Date.keyword"
+      },
+      "customer": {
+        "full_name": "customer"
+      },
+      "tags.Create date": {
+        "full_name": "tags.Create date"
+      },
+      "tags.NMW_OS_DESCRIPTION": {
+        "full_name": "tags.NMW_OS_DESCRIPTION"
+      },
+      "tags.tags.hidden-link: /app-insights-resource-id.keyword": {
+        "full_name": "tags.tags.hidden-link: /app-insights-resource-id.keyword"
+      },
+      "_id": {
+        "full_name": "_id"
+      },
+      "tags.tags.Customer Name.keyword": {
+        "full_name": "tags.tags.Customer Name.keyword"
+      },
+      "tags.tags.location": {
+        "full_name": "tags.tags.location"
+      },
+      "tags.ASR-ReplicaDisk": {
+        "full_name": "tags.ASR-ReplicaDisk"
+      },
+      "tags.tags.AppVersion.keyword": {
+        "full_name": "tags.tags.AppVersion.keyword"
+      },
+      "tags.CV-SubclientId": {
+        "full_name": "tags.CV-SubclientId"
+      },
+      "tags.Orphan Resource": {
+        "full_name": "tags.Orphan Resource"
+      },
+      "tags.Test VM": {
+        "full_name": "tags.Test VM"
+      },
+      "tags.tags.Create date.keyword": {
+        "full_name": "tags.tags.Create date.keyword"
+      },
+      "tags.tags.allocation.keyword": {
+        "full_name": "tags.tags.allocation.keyword"
+      },
+      "tags.hidden-link:/subscriptions/3ff61ecb-d1f5-4c71-97fe-3707f7ec19ee/resourceGroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/migrated-hs-clmsp8k008": {
+        "full_name": "tags.hidden-link:/subscriptions/3ff61ecb-d1f5-4c71-97fe-3707f7ec19ee/resourceGroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/migrated-hs-clmsp8k008"
+      },
+      "tags.WAP_ASSOCIATED_VM_NAME": {
+        "full_name": "tags.WAP_ASSOCIATED_VM_NAME"
+      },
+      "tags.hidden-link:/subscriptions/3ff61ecb-d1f5-4c71-97fe-3707f7ec19ee/resourceGroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/migrated-hs-clmsp8k004": {
+        "full_name": "tags.hidden-link:/subscriptions/3ff61ecb-d1f5-4c71-97fe-3707f7ec19ee/resourceGroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/migrated-hs-clmsp8k004"
+      },
+      "_ignored": {
+        "full_name": "_ignored"
+      },
+      "tags.hidden-link:/subscriptions/94705e36-6421-4b90-90cb-b4eeefcdf7f9/resourceGroups/RES-UG2AZU-EPAY/providers/Microsoft.Web/sites/EPayFunction": {
+        "full_name": "tags.hidden-link:/subscriptions/94705e36-6421-4b90-90cb-b4eeefcdf7f9/resourceGroups/RES-UG2AZU-EPAY/providers/Microsoft.Web/sites/EPayFunction"
+      },
+      "tags.tags.NMW_IMAGE_GUID": {
+        "full_name": "tags.tags.NMW_IMAGE_GUID"
+      },
+      "tags.Domain Controller": {
+        "full_name": "tags.Domain Controller"
+      },
+      "tags.tags.Description": {
+        "full_name": "tags.tags.Description"
+      },
+      "tags.application": {
+        "full_name": "tags.application"
+      },
+      "tags.Creation date": {
+        "full_name": "tags.Creation date"
+      },
+      "tags.RetentionInfo": {
+        "full_name": "tags.RetentionInfo"
+      },
+      "tags.tags.CV-SubclientId.keyword": {
+        "full_name": "tags.tags.CV-SubclientId.keyword"
+      },
+      "tags.tags.hidden-link:/subscriptions/88b48825-6380-4cd8-a812-29e6f5425d01/resourceGroups/eit-devops-es1-rg/providers/Microsoft.Web/sites/eitodooapibackendtest": {
+        "full_name": "tags.tags.hidden-link:/subscriptions/88b48825-6380-4cd8-a812-29e6f5425d01/resourceGroups/eit-devops-es1-rg/providers/Microsoft.Web/sites/eitodooapibackendtest"
+      },
+      "tags.StartStopVMVersion": {
+        "full_name": "tags.StartStopVMVersion"
+      },
+      "tags.tags._COMMVAULT_GXMD_SNAP_.keyword": {
+        "full_name": "tags.tags._COMMVAULT_GXMD_SNAP_.keyword"
+      },
+      "tags.tags.allocation": {
+        "full_name": "tags.tags.allocation"
+      },
+      "tags.SAP WebDispatcher Cloud Connector Router": {
+        "full_name": "tags.SAP WebDispatcher Cloud Connector Router"
+      },
+      "tags.kubernetes.io-created-for-pvc-namespace": {
+        "full_name": "tags.kubernetes.io-created-for-pvc-namespace"
+      },
+      "tags.Fortigate Firewall": {
+        "full_name": "tags.Fortigate Firewall"
+      },
+      "Meter": {
+        "full_name": "Meter"
+      },
+      "tags.tags.aks-managed-operationID.keyword": {
+        "full_name": "tags.tags.aks-managed-operationID.keyword"
+      },
+      "tags.hidden-link:/subscriptions/94705e36-6421-4b90-90cb-b4eeefcdf7f9/resourceGroups/RES-UG2AZU-EPAY/providers/microsoft.insights/components/EPayFunction": {
+        "full_name": "tags.hidden-link:/subscriptions/94705e36-6421-4b90-90cb-b4eeefcdf7f9/resourceGroups/RES-UG2AZU-EPAY/providers/microsoft.insights/components/EPayFunction"
+      },
+      "tags.vb for Azure": {
+        "full_name": "tags.vb for Azure"
+      },
+      "tags.tags.displayName.keyword": {
+        "full_name": "tags.tags.displayName.keyword"
+      },
+      "tags_resources.idLower": {
+        "full_name": "tags_resources.idLower"
+      },
+      "tags.tags.CreatedDate": {
+        "full_name": "tags.tags.CreatedDate"
+      },
+      "tags.aks-managed-cluster-name": {
+        "full_name": "tags.aks-managed-cluster-name"
+      },
+      "tags.tags.hidden-link: /app-insights-resource-id": {
+        "full_name": "tags.tags.hidden-link: /app-insights-resource-id"
+      },
+      "tags.tags.Usage": {
+        "full_name": "tags.tags.Usage"
+      },
+      "tags.WAP_VM_DESCRIPTION": {
+        "full_name": "tags.WAP_VM_DESCRIPTION"
+      },
+      "tags.tags.hidden-link: /app-insights-instrumentation-key.keyword": {
+        "full_name": "tags.tags.hidden-link: /app-insights-instrumentation-key.keyword"
+      },
+      "tags.NMW_ASSIGNMENT_TYPE": {
+        "full_name": "tags.NMW_ASSIGNMENT_TYPE"
+      },
+      "tags.tags.owner.keyword": {
+        "full_name": "tags.tags.owner.keyword"
+      },
+      "tags.tags.kubernetes.io-created-for-pv-name": {
+        "full_name": "tags.tags.kubernetes.io-created-for-pv-name"
+      },
+      "_version": {
+        "full_name": "_version"
+      },
+      "tags.tags.AppVersion": {
+        "full_name": "tags.tags.AppVersion"
+      },
+      "tags.tags.aks-managed-poolName.keyword": {
+        "full_name": "tags.tags.aks-managed-poolName.keyword"
+      },
+      "tags.IVC_JUMP": {
+        "full_name": "tags.IVC_JUMP"
+      },
+      "tags.tags. Description": {
+        "full_name": "tags.tags. Description"
+      },
+      "tags.hidden-sentinelWorkspaceId": {
+        "full_name": "tags.hidden-sentinelWorkspaceId"
+      },
+      "dragonfly_customer": {
+        "full_name": "dragonfly_customer"
+      },
+      "tags.tags.NMW_CREATED_DATE": {
+        "full_name": "tags.tags.NMW_CREATED_DATE"
+      },
+      "tags.tags.aks-managed-consolidated-additional-properties": {
+        "full_name": "tags.tags.aks-managed-consolidated-additional-properties"
+      },
+      "_doc_count": {
+        "full_name": "_doc_count"
+      },
+      "tags.hidden-link:/subscriptions/88b48825-6380-4cd8-a812-29e6f5425d01/resourceGroups/eit-devops-es1-rg/providers/Microsoft.Web/sites/exaodoofunctions": {
+        "full_name": "tags.hidden-link:/subscriptions/88b48825-6380-4cd8-a812-29e6f5425d01/resourceGroups/eit-devops-es1-rg/providers/Microsoft.Web/sites/exaodoofunctions"
+      },
+      "tags.tags.hidden-link: /app-insights-conn-string.keyword": {
+        "full_name": "tags.tags.hidden-link: /app-insights-conn-string.keyword"
+      },
+      "tags.hidden-link:/subscriptions/3713fab4-be05-44f2-b3fc-0f4c79161d14/resourceGroups/RES-UG2WORKORDERMGMT/providers/Microsoft.Web/serverfarms/UG2WebAppServicePlan": {
+        "full_name": "tags.hidden-link:/subscriptions/3713fab4-be05-44f2-b3fc-0f4c79161d14/resourceGroups/RES-UG2WORKORDERMGMT/providers/Microsoft.Web/serverfarms/UG2WebAppServicePlan"
+      },
+      "tags.WAP_VM_DOMAIN": {
+        "full_name": "tags.WAP_VM_DOMAIN"
+      },
+      "tags.aks-managed-creationSource": {
+        "full_name": "tags.aks-managed-creationSource"
+      },
+      "tags.city": {
+        "full_name": "tags.city"
+      },
+      "tags.tags.Ticket #": {
+        "full_name": "tags.tags.Ticket #"
+      },
+      "tags._GXMD_": {
+        "full_name": "tags._GXMD_"
+      },
+      "id": {
+        "full_name": "id"
+      },
+      "tags.tags.aks-managed-cluster-name.keyword": {
+        "full_name": "tags.tags.aks-managed-cluster-name.keyword"
+      },
+      "tags.SAP PIPO": {
+        "full_name": "tags.SAP PIPO"
+      },
+      "tags.PROXIMITY_GROUP": {
+        "full_name": "tags.PROXIMITY_GROUP"
+      },
+      "tags.tags.City.keyword": {
+        "full_name": "tags.tags.City.keyword"
+      },
+      "tags.tags.hidden-link:/subscriptions/88b48825-6380-4cd8-a812-29e6f5425d01/resourceGroups/eit-devops-es1-rg/providers/Microsoft.Web/sites/exaodoofunctions.keyword": {
+        "full_name": "tags.tags.hidden-link:/subscriptions/88b48825-6380-4cd8-a812-29e6f5425d01/resourceGroups/eit-devops-es1-rg/providers/Microsoft.Web/sites/exaodoofunctions.keyword"
+      },
+      "tags.tags.ASR-FODisk": {
+        "full_name": "tags.tags.ASR-FODisk"
+      },
+      "tags.patching": {
+        "full_name": "tags.patching"
+      },
+      "tags.tags.provider.keyword": {
+        "full_name": "tags.tags.provider.keyword"
+      },
+      "tags.ServiceName": {
+        "full_name": "tags.ServiceName"
+      },
+      "tags.tags.Createdby.keyword": {
+        "full_name": "tags.tags.Createdby.keyword"
+      },
+      "tags.tags.NMW_ARM_HOST_POOL": {
+        "full_name": "tags.tags.NMW_ARM_HOST_POOL"
+      },
+      "benchmark_field": {
+        "full_name": "benchmark_field"
+      },
+      "tags.tags.NMW_MARKETPLACE_IMAGE_ID.keyword": {
+        "full_name": "tags.tags.NMW_MARKETPLACE_IMAGE_ID.keyword"
+      },
+      "tags.WAP_DEFAULT": {
+        "full_name": "tags.WAP_DEFAULT"
+      },
+      "tags.tags.NMW_JOB_GUID": {
+        "full_name": "tags.tags.NMW_JOB_GUID"
+      },
+      "tags.ms-asr-source-disk": {
+        "full_name": "tags.ms-asr-source-disk"
+      },
+      "tags.customerName": {
+        "full_name": "tags.customerName"
+      },
+      "tags.veeam": {
+        "full_name": "tags.veeam"
+      },
+      "ResourceGroupName": {
+        "full_name": "ResourceGroupName"
+      },
+      "tags.environment-type": {
+        "full_name": "tags.environment-type"
+      },
+      "tags.tags.customerName.keyword": {
+        "full_name": "tags.tags.customerName.keyword"
+      },
+      "tags.Owner ": {
+        "full_name": "tags.Owner "
+      },
+      "tags. description": {
+        "full_name": "tags. description"
+      },
+      "tags.tags.RequestedBy.keyword": {
+        "full_name": "tags.tags.RequestedBy.keyword"
+      },
+      "tags.SAP Router DR Replication": {
+        "full_name": "tags.SAP Router DR Replication"
+      },
+      "tags.Applicatio": {
+        "full_name": "tags.Applicatio"
+      },
+      "tags.tags.Customer": {
+        "full_name": "tags.tags.Customer"
+      },
+      "_data_stream_timestamp": {
+        "full_name": "_data_stream_timestamp"
+      },
+      "tags.tags.ASR-ReplicaDisk": {
+        "full_name": "tags.tags.ASR-ReplicaDisk"
+      },
+      "tags.tags.kubernetes.io-created-for-pv-name.keyword": {
+        "full_name": "tags.tags.kubernetes.io-created-for-pv-name.keyword"
+      },
+      "_field_names": {
+        "full_name": "_field_names"
+      },
+      "tags.Fotigate Firewall": {
+        "full_name": "tags.Fotigate Firewall"
+      },
+      "tags.tags.DisasterRecovery.keyword": {
+        "full_name": "tags.tags.DisasterRecovery.keyword"
+      },
+      "Cost": {
+        "full_name": "Cost"
+      },
+      "tags.tags.hidden-link:/subscriptions/88b48825-6380-4cd8-a812-29e6f5425d01/resourceGroups/eit-devops-es1-rg/providers/Microsoft.Web/sites/eitodooapibackendtest.keyword": {
+        "full_name": "tags.tags.hidden-link:/subscriptions/88b48825-6380-4cd8-a812-29e6f5425d01/resourceGroups/eit-devops-es1-rg/providers/Microsoft.Web/sites/eitodooapibackendtest.keyword"
+      },
+      "tags.Createdby": {
+        "full_name": "tags.Createdby"
+      },
+      "tags.k8s-azure-cluster-name": {
+        "full_name": "tags.k8s-azure-cluster-name"
+      },
+      "tags.backup": {
+        "full_name": "tags.backup"
+      },
+      "tags.SharePoint 2013 - Prod - WFE": {
+        "full_name": "tags.SharePoint 2013 - Prod - WFE"
+      },
+      "tags.Owner": {
+        "full_name": "tags.Owner"
+      },
+      "tags.tags.k8s-azure-service.keyword": {
+        "full_name": "tags.tags.k8s-azure-service.keyword"
+      },
+      "tags.Vidyashree, Chinmay Arora": {
+        "full_name": "tags.Vidyashree, Chinmay Arora"
+      },
+      "tags.deployment": {
+        "full_name": "tags.deployment"
+      },
+      "tags.SAP GRC": {
+        "full_name": "tags.SAP GRC"
+      },
+      "tags.created by": {
+        "full_name": "tags.created by"
+      },
+      "tags.tags.Createdby": {
+        "full_name": "tags.tags.Createdby"
+      },
+      "tags.tags.aks-managed-orchestrator": {
+        "full_name": "tags.tags.aks-managed-orchestrator"
+      },
+      "tags.tags.city": {
+        "full_name": "tags.tags.city"
+      },
+      "tags.tags.createdBy.keyword": {
+        "full_name": "tags.tags.createdBy.keyword"
+      },
+      "SubscriptionId": {
+        "full_name": "SubscriptionId"
+      },
+      "tags.hidden-SentinelTemplateName": {
+        "full_name": "tags.hidden-SentinelTemplateName"
+      },
+      "tags.tags.shutdown": {
+        "full_name": "tags.tags.shutdown"
+      },
+      "tags.Loftware Applicaton": {
+        "full_name": "tags.Loftware Applicaton"
+      },
+      "ResourceLocation": {
+        "full_name": "ResourceLocation"
+      },
+      "tags.idLower": {
+        "full_name": "tags.idLower"
+      },
+      "tags.tags.provider": {
+        "full_name": "tags.tags.provider"
+      },
+      "tags.TestVM": {
+        "full_name": "tags.TestVM"
+      },
+      "tags.Dragonfly": {
+        "full_name": "tags.Dragonfly"
+      },
+      "tags.Shutdown": {
+        "full_name": "tags.Shutdown"
+      },
+      "tags.OSDCloud": {
+        "full_name": "tags.OSDCloud"
+      },
+      "tags.veeam backup appliance ID": {
+        "full_name": "tags.veeam backup appliance ID"
+      },
+      "tags.Description": {
+        "full_name": "tags.Description"
+      },
+      "tags.tags.NMW_ARM_HOST_POOL.keyword": {
+        "full_name": "tags.tags.NMW_ARM_HOST_POOL.keyword"
+      },
+      "tags.Country": {
+        "full_name": "tags.Country"
+      },
+      "tags.SkipNRMSMgmt": {
+        "full_name": "tags.SkipNRMSMgmt"
+      },
+      "ResourceType": {
+        "full_name": "ResourceType"
+      },
+      "_tier": {
+        "full_name": "_tier"
+      },
+      "tags.CreatedDate": {
+        "full_name": "tags.CreatedDate"
+      },
+      "tags.NMW_VM_DESCRIPTION": {
+        "full_name": "tags.NMW_VM_DESCRIPTION"
+      },
+      "tags.tags.Dragonfly": {
+        "full_name": "tags.tags.Dragonfly"
+      },
+      "tags.tags.kubernetes.io-created-for-pvc-name.keyword": {
+        "full_name": "tags.tags.kubernetes.io-created-for-pvc-name.keyword"
+      },
+      "tags.hidden-related:/subscriptions/0c8db7b0-eceb-4f8a-b286-5b816ba99ebe/resourceGroups/cin-dynamicsconnect-nonprd-ncu-rg/providers/Microsoft.Web/serverfarms/cin-dynamicsconnect-nonprd-ncu-plan": {
+        "full_name": "tags.hidden-related:/subscriptions/0c8db7b0-eceb-4f8a-b286-5b816ba99ebe/resourceGroups/cin-dynamicsconnect-nonprd-ncu-rg/providers/Microsoft.Web/serverfarms/cin-dynamicsconnect-nonprd-ncu-plan"
+      },
+      "tags_resources.tags.Environment": {
+        "full_name": "tags_resources.tags.Environment"
+      },
+      "tags.created Date": {
+        "full_name": "tags.created Date"
+      },
+      "tags.CreatedBy": {
+        "full_name": "tags.CreatedBy"
+      },
+      "tags.tags.Location": {
+        "full_name": "tags.tags.Location"
+      },
+      "tags.asrseeddisk-da34d0fa-ba46-5167-9763-566cca0160b5": {
+        "full_name": "tags.asrseeddisk-da34d0fa-ba46-5167-9763-566cca0160b5"
+      },
+      "tags.Ticket": {
+        "full_name": "tags.Ticket"
+      },
+      "tags.NMW_OS_BUILD": {
+        "full_name": "tags.NMW_OS_BUILD"
+      },
+      "tags.tags.ASR-FODisk.keyword": {
+        "full_name": "tags.tags.ASR-FODisk.keyword"
+      },
+      "tags.automation": {
+        "full_name": "tags.automation"
+      },
+      "tags.tags.NMW_MARKETPLACE_IMAGE_ID": {
+        "full_name": "tags.tags.NMW_MARKETPLACE_IMAGE_ID"
+      },
+      "tags.sharepoint": {
+        "full_name": "tags.sharepoint"
+      },
+      "tags.SAP Web Dispatcher": {
+        "full_name": "tags.SAP Web Dispatcher"
+      },
+      "tags.created By": {
+        "full_name": "tags.created By"
+      },
+      "tags.tags.owner": {
+        "full_name": "tags.tags.owner"
+      },
+      "tags.aks-managed-orchestrator": {
+        "full_name": "tags.aks-managed-orchestrator"
+      },
+      "tags.tags.CreatedBy": {
+        "full_name": "tags.tags.CreatedBy"
+      },
+      "tags.tags.kubernetes.io-created-for-pvc-namespace.keyword": {
+        "full_name": "tags.tags.kubernetes.io-created-for-pvc-namespace.keyword"
+      },
+      "tags.Varun Gupta": {
+        "full_name": "tags.Varun Gupta"
+      },
+      "tags.tags.NMW_SOURCE_IMAGE_GUID": {
+        "full_name": "tags.tags.NMW_SOURCE_IMAGE_GUID"
+      },
+      "tags.tags._GXMD_": {
+        "full_name": "tags.tags._GXMD_"
+      },
+      "tags.DR Site": {
+        "full_name": "tags.DR Site"
+      }
+    }
+  }
+}
