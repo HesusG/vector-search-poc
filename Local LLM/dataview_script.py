@@ -19,11 +19,18 @@ KIBANA_API_KEY = os.environ.get("KibanaKey")
 fields_without_custom_label = []
 readable_labels = []
 indices_views = {
-    "odoo.helpdesk.ticket":"bf4ea9fa-4b4f-493a-8033-aeb706f9db86",
+    "odoo.helpdesk.ticket": "25bb3bfd-24c3-4e82-bc2d-b2ac5c767339", 
+     "azure.account.move.line" : "458cc523-89ee-4c1e-b9a9-15df9d2c9b10", 
+    "odoo.mail.message": "5a72ef52-d6e8-4937-9844-ab88484f210e",
+    "odoo.project.task": "6d6864c5-e27f-4673-8555-415513b4cf9a",
+    "odoo.rating.rating": "2875a5f3-d52d-48d6-9a5b-1efdf6305e54",
+    "odoo.timesheet": "c9a9f9fb-b5d1-4cbf-85fb-66eb82edce0f",
+    "qualys.assetdetection": "068cbb5e-c618-4431-9de3-cafd799352be"
 }
 
 
- # %%
+
+# %%
 def chunk_list(lst, n):
     """Yield successive n-sized chunks from lst."""
     for i in range(0, len(lst), n):
@@ -86,6 +93,7 @@ def fetch_data_view_details_with_custom_labels(indices_views):
                 print(field)
         else:
             print(f"Failed to fetch data view details for {index_name}: {response.status_code}")
+fetch_data_view_details_with_custom_labels(indices_views)            
 # %%
 def generate_readable_labels(fields):
     readable_labels = []
