@@ -95,7 +95,7 @@ def generate_text_with_context(context, query):
     )
     return response
 
-
+# %% Test no stream
 index_name = 'ticket_similarity'
 sampled_tickets = sample_tickets(index_name)
 print(f"Sampled {len(sampled_tickets)} tickets.")
@@ -110,3 +110,28 @@ query = "What is the most common solution?"
 
 generated_response = generate_text_with_context(context, query)
 print(generated_response)
+
+
+# %% Stream
+
+def generate_text_with_context_streaming(context, query):
+    stream = ollama.chat(
+        model='llama3',
+        messages = [
+        {'role': 'user', 'content': f"{context}\n\nQuery: {query}"}
+    ],
+        stream=True,
+    )
+    return stream
+   
+index_name = 'ticket_similarity'
+sampled_tickets = sample_tickets(index_name)
+print(f"Sampled {len(sampled_tickets)} tickets.")
+
+most_common_sol = most_common_solution(sampled_tickets)
+print(f"Most common solution: {most_common_sol}")
+
+context = "\n".join([f"Ticket ID: {i+1}, Solution: {ticket['solution']}" for i, ticket in enumerate(sampled_tickets)])
+user_message = "What is the most common solution?"
+stream = generate_text_with_context_streaming(context, user_message)
+# %%
