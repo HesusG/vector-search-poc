@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RAG - POC</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .remark-slide-content {
+        font-family: "Open Sans", sans-serif;
+        padding-top: 20px;
+        padding-left: 60px;
+        padding-right: 20px;
+      }
+
+      .green-background {
+        background-color: #56f89a;
+        color: #ffffff;
+      }
+
+      .remark-slide-container {
+        background-color: #f7f4ec;
+        color: #333;
+      }
+
+      strong {
+        color: #fe5df4;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-weight: 400;
+      }
+
+      h1 {
+        color: #333 !important;
+      }
+
+      .remark-code,
+      .remark-inline-code {
+        font-family: "Open Sans", monospace;
+        background-color: #eaeaea;
+        color: #333;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .profile-pic {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+      .fa {
+        margin: 0 10px;
+      }
+      a:hover .fa {
+        color: #007bff;
+      }
+      .custom-link {
+        font-weight: bold;
+        color: #333 !important;
+        text-decoration: none;
+      }
+
+      .custom-link:hover {
+        color: #555 !important;
+      }
+
+      .image-right {
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .image-left {
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+        class: center, middle, green-background
+              
+        # Implementing LLM with RAG in Elasticsearch
+        ### Proof of Concept Prototype for Odoo Ticket Querying
+        #### Managed Services
+        
+        ---
+        
+        # What is RAG (Retrieval-Augmented Generation)?
+        
+        - **Combination of Retrieval and Generation**:
+          - **Retrieval**: Searches for relevant information from a dataset.
+          - **Generation**: Produces coherent responses using retrieved information.
+        
+        - **Components**:
+          - **Retriever**: Finds relevant documents.
+          - **Generator**: Uses documents to generate a response.
+        
+        ---
+        # RAG Proof of Concept
+        <br><br><br>
+        ![RAG Proof of Concept](img/RAG-POC.png)
+
+        ---
+        
+        # What are the Use Cases for RAG?
+        
+        There are many different use cases for RAG. The most common ones are:
+        
+        - **Question and Answer Chatbots**: Automate customer support and website lead follow-up to answer questions and resolve issues quickly.
+
+        - **Search Augmentation**: Search engines that augment search results with LLM-generated answers can better answer informational queries.
+
+        - **Knowledge Engine**: Ask questions on your data (e.g., HR, compliance documents, tickets). Company data can be used as context for LLMs and allow employees to get answers.
+        
+        ---
+        
+        # Why LLMs and RAG are an Opportunity
+        
+        - **Leverage Historical Data**:
+          - Utilize existing ticket data for context-aware, accurate responses.
+          
+        - **Boost Efficiency**:
+          - Resolve tickets faster with quick access to relevant information.
+          
+        - **Proactive Issue Resolution**:
+          - Identify and address recurring problems.
+        
+        - **Improve Reporting**:
+          - Generate detailed, insightful reports on ticket status and performance.
+        
+        ---
+        
+        # LLMs and RAG are not Magic
+        
+        - **Prediction-Based**:
+          - LLMs predict the next word based on context, requiring substantial computational power.
+        
+        - **Data-Driven**:
+          - Performance hinges on the quality and volume of training data.
+        
+        #### Investment Requirements
+        
+        - **Infrastructure**:
+          - To achieve real-time responses, we may need to invest in robust computing infrastructure or cloud services.
+        
+        - **Token Management**:
+          - Efficient token handling is crucial for managing costs and performance.
+        
+        ---
+        
+        class: center, middle, green-background
+        
+        # Proof of Concept Prototype for Odoo Ticket Querying
+        
+        ---
+        
+        # Proof of Concept: LLM with RAG in Elasticsearch
+        
+        - **Objective**: Enhance ticket querying in Odoo using LLM with RAG.
+
+        - **Components**:
+          - **Elasticsearch**: Store and retrieve ticket data.
+          - **Ollama Models**: Generate responses based on retrieved data.
+        - **Scope**: Implement a prototype to query ticket information efficiently.
+        
+        ---
+        
+        # Why Ollama Models?
+        
+        - **Privacy**: Runs LLMs locally, ensuring data privacy.
+
+        - **Control**: Full control over deployment and model usage.
+
+        - **Customization**: Easily customizable to fit specific business needs.
+        
+        ---
+        
+        # Conclusion and Next Steps
+        
+        - **Conclusion**: Implementing LLM with RAG in Elasticsearch offers significant benefits.
+
+        - **Next Steps**:
+          - Develop and test using better data and better prompting techniques.
+          - Gather feedback and refine the solution.
+          - Plan for real implementation.
+
+        </textarea
+    >
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>
+      var slideshow = remark.create({});
+    </script>
+  </body>
+</html>
