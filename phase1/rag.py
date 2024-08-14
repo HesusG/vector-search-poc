@@ -3,7 +3,7 @@ import os
 from elasticsearch import Elasticsearch
 from dotenv import load_dotenv
 import ollama
-
+# %%
 dotenv_path = "/path/to/your/.env"
 load_dotenv(dotenv_path=dotenv_path)
 es_host = os.environ.get("ELASTICSEARCH_HOST")
@@ -11,9 +11,13 @@ es_user = os.environ.get("ELASTICSEARCH_USER")
 es_pass = os.environ.get("ELASTICSEARCH_PASS")
 
 es = Elasticsearch(
-    hosts=[es_host],
-    basic_auth=(es_user, es_pass)
+    hosts=f"{es_host}", 
+    basic_auth=(f"{es_user}", f"{es_pass}")
 )
+
+# %% 
+
+
 # %%
 def knn_search(index, field, query_vector, k=10):
     search_body = {
@@ -69,7 +73,7 @@ def sample_tickets(index, size=100):
         "query": {
             "bool": {
                 "must_not": [
-                    {"term": {"solution": "unknown"}}
+                    {"term": {"solution": "Unknown"}}
                 ]
             }
         }
